@@ -17,7 +17,7 @@ HEADERS = {
 parser = argparse.ArgumentParser(
     prog='ngl-flooder',
     description='Floods ngl.link with a given text and user.',
-    epilog='Example: python3 main.py -u "username" -m "Hello"'
+    epilog='Example: python3 ngl-flooder -u "username" -m "Hello"'
 )
 
 parser.add_argument('-u', '--user', type=str, help='Target NGL user', required=True)
