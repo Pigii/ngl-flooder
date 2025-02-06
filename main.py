@@ -94,7 +94,6 @@ def send_ngl_thread(text: str, target: str, p: str) -> None:
                     if p in proxies:
                         proxies[p] += 1
                         if proxies[p] > 10:
-                            print(f"Removing proxy {p} due to repeated failures.")
                             del proxies[p]
                             
     except Exception as e:
