@@ -1,6 +1,18 @@
-# ngl-flooder
-Uses http proxies to send messages to a NGL.LINK user
-# Guide
-1. Install python on your device
-2. Install the dependencies (`pip install -r requirements.txt`)
-3. Run the program (`python3 ngl-flooder -u "username" -m "text" -t 200 -p "proxy.txt"`)
+# NGL Flooder
+
+A simple tool to flood [ngl.link](https://ngl.link) with messages using direct requests or proxies.
+
+## Usage
+
+- **Direct Mode (default):**  
+  ```bash
+  python3 flooder.py -u "username" -m "Your message here"
+  ```
+- Proxy Mode:
+  ```bash
+  python3 flooder.py -u "username" -m "Your message here" --use-proxies -p proxies.txt
+  ```
+- Additional Options:
+  Use `-t` to set the maximum number of threads (default is 200).
+
+  Press `CTRL+C` to stop.
